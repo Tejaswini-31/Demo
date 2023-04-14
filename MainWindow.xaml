@@ -1,0 +1,84 @@
+﻿<Window x:Class="ServiceCentral.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceCentral"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Service Central" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" />
+        <Grid Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" >
+            <Grid.RowDefinitions >
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Content="Home" />
+            <Button Grid.Row="0" Grid.Column="2" Content="Knowlegde Library" />
+            <Button Grid.Row="0" Grid.Column="4" Content="System Status" />
+            <Button Grid.Row="0" Grid.Column="6" Content="Tours" />
+            <Button Grid.Row="0" Grid.Column="8" Content="V M"/>
+        </Grid>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="How can we help you V M ?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="23" FontWeight="Bold" />
+        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="How can we help ?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" />
+        <Label Grid.Row="3" Grid.Column="0"  Content="Service Status" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Black" />
+        <Label Grid.Row="3" Grid.Column="1"  Content="Order or Request" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Black" />
+        <Label Grid.Row="3" Grid.Column="2"  Content="Report an Issue" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Black" />
+        <Label Grid.Row="3" Grid.Column="3"  Content="Search Library" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Black" />
+        <Label Grid.Row="3" Grid.Column="4"  Content="Ask Adam" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Black" />
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="20" />
+                <RowDefinition />
+                <RowDefinition Height="20" />
+                <RowDefinition />
+            </Grid.RowDefinitions >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="1" Content="My Requests" />
+            <Button Grid.Row="2" Grid.Column="1" Content="My Actions" />
+            <Button Grid.Row="4" Grid.Column="1" Content="My Items" />
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="20" />
+                <RowDefinition />
+
+            </Grid.RowDefinitions >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="1" Content="My Reported Issues" />
+            <Button Grid.Row="2" Grid.Column="1" Content="Get support from Non Group IT functions" />
+
+        </Grid>
+
+    </Grid>
+</Window>
